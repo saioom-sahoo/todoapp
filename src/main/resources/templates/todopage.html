@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="/style/todo.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-add">
+            <form action="/addtodo" method="post">
+                <input type="text" name="action">
+                <input type="submit" value="ADD">
+            </form>
+        </div>
+        <div class="todo-show">
+            <div class="todo-list">
+                <input type="checkbox">
+                <p class="strike">Todo 1</p>
+                <a href="#">
+                    <i class="material-icons">&#xe872;</i>
+                </a>
+            </div>
+
+            <div class="todo-list">
+                <input type="checkbox">
+                <p>Todo 1</p>
+                <a href="#">
+                    <i class="material-icons">&#xe872;</i>
+                </a>
+            </div>
+
+            <div class="todo-list">
+                <input type="checkbox">
+                <p>Todo 2</p>
+                <a href="#">
+                    <i class="material-icons">&#xe872;</i>
+                </a>
+            </div>
+
+            <div class="todo-list">
+                <input type="checkbox">
+                <p>Todo 3</p>
+                <a href="#">
+                    <i class="material-icons">&#xe872;</i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

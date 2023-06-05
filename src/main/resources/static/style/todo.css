@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    color-scheme: dark white;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    /* background-image: linear-gradient(60deg, red, deeppink, blue); */
+}
+
+.container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+/* 2nd box */
+
+.todo-add,
+.todo-show {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0px 32px rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.todo-show {
+    padding: 1rem;
+}
+
+.todo-list {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 1rem;
+
+}
+
+.todo-list:last-child {
+    border-bottom: none;
+}
+
+/*  1st box */
+
+.todo-add form {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.todo-add {
+    padding: 1rem;
+}
+
+.todo-add input {
+    font-size: 1.2rem;
+    padding: 0.1rem;
+}
+
+.todo-add input[type="submit"] {
+    all: unset;
+    background-color: #010100;
+    color: #fff;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(31, 38, 135, 0.37);
+    cursor: pointer;
+}
+
+.strike {
+    text-decoration: line-through;
+}
